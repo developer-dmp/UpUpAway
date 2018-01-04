@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_profile_picture"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profilePictureImageView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileNameTextView"
+        android:layout_below="@+id/profilePictureImageView"
+        android:layout_alignStart="@+id/profilePictureImageView"
+        android:layout_alignLeft="@+id/profilePictureImageView"
+        android:text="FirstName, age"
+        android:textAllCaps="true"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileLocationTextView"
+        android:layout_below="@+id/profileNameTextView"
+        android:layout_alignStart="@+id/profileNameTextView"
+        android:layout_alignLeft="@+id/profileNameTextView"
+        android:text="Location"
+        android:textAllCaps="true"
+        android:paddingTop="@dimen/activity_horizontal_margin"/>
+</RelativeLayout>

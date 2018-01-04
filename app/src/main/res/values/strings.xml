@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FragmentTransition</string>
+    <string name="slide">Slide</string>
+</resources>
